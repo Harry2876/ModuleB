@@ -5,8 +5,208 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#F1FFE7"
+    tools:context=".LoginActivity">
 
-<include layout="@layout/activity_login"/>
+
+    <ImageView
+        android:id="@+id/loginbanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="196dp"
+        android:src="@drawable/loginbanner"
+        app:layout_constraintBottom_toTopOf="@+id/emailbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/inkfree"
+        android:text="Favourite Food"
+        android:textColor="@color/headinggreen"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbanner" />
+
+    <TextView
+        android:id="@+id/smalltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/jostmedium"
+        android:text="Deliver Favourite Food"
+        android:textColor="@color/smalltxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appname" />
+
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/jostmedium"
+        android:text="Login To Your Account"
+        android:textColor="#606c38"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smalltxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/emailbox"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="362dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="60dp"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/passbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/emailicn"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:src="@drawable/email"
+        app:layout_constraintBottom_toBottomOf="@+id/emailbox"
+        app:layout_constraintEnd_toEndOf="@+id/emailbox"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="@+id/emailbox"
+        app:layout_constraintTop_toTopOf="@+id/emailbox"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <EditText
+        android:id="@+id/passbox"
+        android:layout_width="362dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="300dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/icnpass"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:src="@drawable/padlock"
+        app:layout_constraintBottom_toBottomOf="@+id/passbox"
+        app:layout_constraintEnd_toEndOf="@+id/passbox"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/passbox"
+        app:layout_constraintTop_toTopOf="@+id/passbox"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/jostmedium"
+        android:text="or"
+        android:textColor="@color/smalltxt"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passbox" />
+
+    <TextView
+        android:id="@+id/continuetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/jostmedium"
+        android:text="Continue With"
+        android:textColor="#606c38"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/googlebtn"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="53dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Google"
+        android:textColor="@color/black"
+        app:icon="@drawable/google"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toStartOf="@+id/fbbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/continuetxt" />
+
+    <Button
+        android:id="@+id/fbbtn"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Facebook"
+        android:textColor="@color/black"
+        app:icon="@drawable/facebook"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/googlebtn"
+        app:layout_constraintTop_toBottomOf="@+id/continuetxt" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="139dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/continuetxt" />
+
+    <TextView
+        android:id="@+id/newaccbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        android:text="Dont Have Account?"
+        android:textColor="@color/smalltxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/loginbtn"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/loginbtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

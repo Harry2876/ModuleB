@@ -5,6 +5,181 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F1FFE7"
     tools:context=".CreateAccount">
+
+    <ImageView
+        android:id="@+id/createaccbanner"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="56dp"
+        android:src="@drawable/createaccimg"
+        app:layout_constraintBottom_toTopOf="@+id/smalltxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/inkfree"
+        android:text="Favourite Food"
+        android:textColor="@color/headinggreen"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/smalltxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createaccbanner"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <TextView
+        android:id="@+id/smalltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="602dp"
+        android:fontFamily="@font/jostmedium"
+        android:text="Deliver Favourite Food"
+        android:textColor="@color/smalltxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createaccbanner" />
+
+
+    <TextView
+        android:id="@+id/signuptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jostmedium"
+        android:text="Signup To Your Account"
+        android:textColor="#606c38"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/namebox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smalltxt"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <EditText
+        android:id="@+id/namebox"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="362dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="32dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingStart="60dp"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/emailbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/nameicn"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:src="@drawable/newuser"
+        app:layout_constraintBottom_toBottomOf="@+id/namebox"
+        app:layout_constraintEnd_toEndOf="@+id/namebox"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="@+id/namebox"
+        app:layout_constraintTop_toTopOf="@+id/namebox"
+        app:layout_constraintVertical_bias="0.461" />
+
+
+
+    <EditText
+        android:id="@+id/emailbox"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="362dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="36dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="60dp"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/passbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/emailicn"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:src="@drawable/email"
+        app:layout_constraintBottom_toBottomOf="@+id/emailbox"
+        app:layout_constraintEnd_toEndOf="@+id/emailbox"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="@+id/emailbox"
+        app:layout_constraintTop_toTopOf="@+id/emailbox"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <EditText
+        android:id="@+id/passbox"
+        android:layout_width="362dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="212dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/icnpass"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:src="@drawable/padlock"
+        app:layout_constraintBottom_toBottomOf="@+id/passbox"
+        app:layout_constraintEnd_toEndOf="@+id/passbox"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/passbox"
+        app:layout_constraintTop_toTopOf="@+id/passbox"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <Button
+        android:id="@+id/createaccbtn"
+        android:layout_width="192dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#44CF6C"
+        android:text="Create Account"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passbox"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <TextView
+        android:id="@+id/existinglinktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Already Have An Account?"
+        android:textColor="@color/smalltxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createaccbtn"
+        app:layout_constraintVertical_bias="0.162" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
