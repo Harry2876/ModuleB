@@ -79,9 +79,21 @@
         android:textAlignment="textStart"
         app:layout_constraintBottom_toTopOf="@+id/newaccbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/emailicn"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:src="@drawable/email"
+        app:layout_constraintBottom_toBottomOf="@+id/emailbox"
+        app:layout_constraintEnd_toEndOf="@+id/emailbox"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="@+id/emailbox"
+        app:layout_constraintTop_toTopOf="@+id/emailbox"
+        app:layout_constraintVertical_bias="0.461" />
 
     <EditText
         android:id="@+id/passbox"
@@ -99,6 +111,18 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailbox" />
+
+    <ImageView
+        android:id="@+id/icnpass"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:src="@drawable/padlock"
+        app:layout_constraintBottom_toBottomOf="@+id/passbox"
+        app:layout_constraintEnd_toEndOf="@+id/passbox"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/passbox"
+        app:layout_constraintTop_toTopOf="@+id/passbox"
+        app:layout_constraintVertical_bias="0.512" />
 
     <TextView
         android:id="@+id/textView4"
